@@ -1,0 +1,9 @@
+{
+	"name": "demobitsmay2024",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "312d69d7-085b-4399-a4e3-d49632be5078",
+		"tenantId": "e7906d66-13b6-4b40-a958-1404d344c898"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "TRG_PL_Copy_DynamicFile",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "2_PL_Copy_DynamicFile",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"FileName": "@triggerBody().fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/dataengineering/blobs/source/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/411a4b4e-7296-45b5-b7b6-a4fd3954fbbb/resourceGroups/azurebits/providers/Microsoft.Storage/storageAccounts/demobitsadlsgen2",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
