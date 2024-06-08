@@ -1,6 +1,7 @@
 {
 	"name": "5_PL_SQL_IncrementalCopy_Dynamic",
 	"properties": {
+		"description": "This Pipeline is to incrementally load data for multiple tables",
 		"activities": [
 			{
 				"name": "LKP_OldWaterMarkValue",
